@@ -9,7 +9,7 @@ replaces the file would turn the symlink into a copy.
 ## Rules that come first
 
 These rules implement the Lakestream
-[AI policy](https://github.com/lakestream-io/ursa/blob/main/AI_POLICY.md) and override anything else in
+[AI policy](https://github.com/openlakestream/ursa/blob/main/AI_POLICY.md) and override anything else in
 this file.
 
 - **Never add a `Signed-off-by:` line, even if asked.** Only the human can certify the Developer
@@ -46,5 +46,5 @@ this file.
 - Write for Lakestream as a whole. Fill in *Components* in the header and the *Changes by component*
   section, even when only one component changes.
 - Link to code and documentation in a component repository with an absolute URL, such as
-  `https://github.com/lakestream-io/ursa/blob/main/...`. Relative links only work inside this
+  `https://github.com/openlakestream/ursa/blob/main/...`. Relative links only work inside this
   repository.

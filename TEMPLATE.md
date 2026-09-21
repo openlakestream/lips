@@ -43,9 +43,9 @@ The problem, concretely. What are people trying to do, and what gets in the way 
 
 What changes in each component. Delete the components that don't change.
 
-- **lakestream-api** ([lakestream-io/ursa](https://github.com/lakestream-io/ursa)):
-- **Ursa** ([lakestream-io/ursa](https://github.com/lakestream-io/ursa)):
-- **Kafka (UFK)** ([lakestream-io/kafka](https://github.com/lakestream-io/kafka)):
+- **lakestream-api** ([openlakestream/ursa](https://github.com/openlakestream/ursa)):
+- **Ursa** ([openlakestream/ursa](https://github.com/openlakestream/ursa)):
+- **Kafka (UFK)** ([openlakestream/kafka](https://github.com/openlakestream/kafka)):
 
 ## Public-facing changes
 
@@ -113,7 +113,7 @@ What else you considered, and why you didn't choose it.
 ## For a new materializer
 
 Fill in this section when the LIP proposes a materializer, and delete it otherwise. See
-[Write a materializer](https://github.com/lakestream-io/ursa/blob/main/docs/developer/materializer-guide.md).
+[Write a materializer](https://github.com/openlakestream/ursa/blob/main/docs/developer/materializer-guide.md).
 
 - **Destination:** the table format or store, and the versions you support.
 - **Catalog type and configuration:** the proposed `TableCatalogType` name, the `TableCatalog`
