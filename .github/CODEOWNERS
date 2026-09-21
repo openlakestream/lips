@@ -1,0 +1,4 @@
+# Code owners review pull requests that touch their paths.
+# LIPs are API and format decisions for every Lakestream component, so every pull request needs a
+# review from one of these. Also ask a maintainer of each component that the LIP changes.
+*                                   @merlimat @hangc0276 @codelipenghui
