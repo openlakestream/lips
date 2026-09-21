@@ -729,7 +729,7 @@ make destroy
 ```
 
 **Requirements**:
-- Standalone Ursa compactor Maven package (built from the [lakestream-io/ursa](https://github.com/lakestream-io/ursa) repository)
+- Standalone Ursa compactor Maven package (built from the [openlakestream/ursa](https://github.com/openlakestream/ursa) repository)
 - MinIO or real S3 for storage backend
 
 ### Lakestream identity compatibility

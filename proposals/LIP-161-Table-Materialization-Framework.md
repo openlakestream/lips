@@ -24,7 +24,7 @@ to that table" experience.
 **Ursa storage** is a lakehouse-native stream storage library: data is written
 to a cloud-storage WAL, then physically compacted into columnar (Parquet)
 Compacted Objects so that reads can be fast. See the
-[Ursa Storage Developer Guide](https://github.com/lakestream-io/ursa/blob/main/docs/developer/WAL-Cloud-Storage-Developer-Guide.md).
+[Ursa Storage Developer Guide](https://github.com/openlakestream/ursa/blob/main/docs/developer/WAL-Cloud-Storage-Developer-Guide.md).
 
 **Today's compaction framework** does two distinct things:
 
@@ -454,7 +454,7 @@ No data is lost; no rewrites required.
 
 - The `StreamCatalog` Java API registers table catalogs, sets the active
   namespace policy, and attaches per-stream override policies. See
-  [docs/user/table-materialization.md](https://github.com/lakestream-io/ursa/blob/main/docs/user/table-materialization.md) for
+  [docs/user/table-materialization.md](https://github.com/openlakestream/ursa/blob/main/docs/user/table-materialization.md) for
   the user-facing quickstart.
 - Operators configure cluster `TableCatalog` definitions in the compaction
   configuration (`iceberg.catalog.<name>.*`, `delta.catalog.<name>.*`) —
@@ -538,4 +538,4 @@ This LIP is kept as the design record. Ursa 1.0.0 differs from it in these place
 | ClickHouse translates source schemas through an Avro intermediate (`AvroToClickHouseSchema`). | Column types are inferred from the decoded rows. |
 | Materialization metrics and dead-letter handling. | Framework-level error handling (`errorHandling`, `dlqTopic`) and metrics aren't implemented: the compactor wires no-op metrics and a no-op failure handler. The Iceberg and Delta writers keep their own dead-letter table. |
 
-To write a materializer against 1.0.0, see [Write a materializer](https://github.com/lakestream-io/ursa/blob/main/docs/developer/materializer-guide.md).
+To write a materializer against 1.0.0, see [Write a materializer](https://github.com/openlakestream/ursa/blob/main/docs/developer/materializer-guide.md).

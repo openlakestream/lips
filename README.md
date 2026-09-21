@@ -10,9 +10,9 @@ whole, and lists what changes in each component:
 
 | Component | Where the code lives |
 |---|---|
-| `lakestream-api`: the public, protocol-neutral Lakestream API | [lakestream-io/ursa](https://github.com/lakestream-io/ursa), in the `lakestream-api` module |
-| Ursa: stream storage on object storage, and the materialization framework | [lakestream-io/ursa](https://github.com/lakestream-io/ursa) |
-| Ursa for Apache Kafka (UFK): Kafka with diskless topics backed by Ursa | [lakestream-io/kafka](https://github.com/lakestream-io/kafka) |
+| `lakestream-api`: the public, protocol-neutral Lakestream API | [openlakestream/ursa](https://github.com/openlakestream/ursa), in the `lakestream-api` module |
+| Ursa: stream storage on object storage, and the materialization framework | [openlakestream/ursa](https://github.com/openlakestream/ursa) |
+| Ursa for Apache Kafka (UFK): Kafka with diskless topics backed by Ursa | [openlakestream/kafka](https://github.com/openlakestream/kafka) |
 
 To propose a change, read [CONTRIBUTING.md](CONTRIBUTING.md), then start from
 [TEMPLATE.md](TEMPLATE.md).
@@ -36,4 +36,4 @@ To propose a change, read [CONTRIBUTING.md](CONTRIBUTING.md), then start from
 | [163](proposals/LIP-163-Ursa-Zone-Aware-Owner-Selection.md) | Ursa Zone-Aware Owner Selection | Kafka (UFK) | Released in UFK 4.3.1.1 |
 
 Numbering starts at 161, the number LIP-161 was first published under. LIP-162 and LIP-163 were
-LIP-001 and LIP-002 in lakestream-io/kafka before they moved here.
+LIP-001 and LIP-002 in openlakestream/kafka before they moved here.

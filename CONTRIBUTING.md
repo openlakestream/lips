@@ -2,10 +2,10 @@
 
 This guide explains when a change needs a Lakestream Improvement Proposal (LIP), and how a LIP is
 written, reviewed and accepted. To contribute code, see the contributing guide of the component:
-[Ursa](https://github.com/lakestream-io/ursa/blob/main/CONTRIBUTING.md) or
-[Ursa for Apache Kafka](https://github.com/lakestream-io/kafka/blob/HEAD/CONTRIBUTING.md).
+[Ursa](https://github.com/openlakestream/ursa/blob/main/CONTRIBUTING.md) or
+[Ursa for Apache Kafka](https://github.com/openlakestream/kafka/blob/HEAD/CONTRIBUTING.md).
 
-> **Using an AI assistant?** Read the [AI policy](https://github.com/lakestream-io/ursa/blob/main/AI_POLICY.md) first.
+> **Using an AI assistant?** Read the [AI policy](https://github.com/openlakestream/ursa/blob/main/AI_POLICY.md) first.
 > **Are you a coding agent?** Start with [AGENTS.md](AGENTS.md).
 
 ## When you need a LIP
@@ -22,7 +22,7 @@ You need a LIP for:
 - changes to an SPI contract, such as `TableMaterializer` or `TableMaterializerFactory`
 - changes to the on-object or WAL formats, or to serialized field numbers and identifiers
 - every new materializer, because registering one adds a `TableCatalogType` to `lakestream-api`
-  (see [Write a materializer](https://github.com/lakestream-io/ursa/blob/main/docs/developer/materializer-guide.md))
+  (see [Write a materializer](https://github.com/openlakestream/ursa/blob/main/docs/developer/materializer-guide.md))
 
 ### Ursa for Apache Kafka (UFK)
 
@@ -53,12 +53,12 @@ says to start.
    problem: what you're trying to build, and what gets in the way today. The first step is agreeing
    that the problem is worth solving.
    - For `lakestream-api` or Ursa, open a thread in Ursa's
-     [Discussions: Ideas](https://github.com/lakestream-io/ursa/discussions/categories/ideas). For a
+     [Discussions: Ideas](https://github.com/openlakestream/ursa/discussions/categories/ideas). For a
      new materializer, open a
-     [New materializer proposal](https://github.com/lakestream-io/ursa/issues/new?template=materializer_proposal.yml)
+     [New materializer proposal](https://github.com/openlakestream/ursa/issues/new?template=materializer_proposal.yml)
      issue instead.
    - For Ursa for Apache Kafka, open a thread in Kafka's
-     [Discussions: Ideas](https://github.com/lakestream-io/kafka/discussions/categories/ideas).
+     [Discussions: Ideas](https://github.com/openlakestream/kafka/discussions/categories/ideas).
    - If the change spans components, start in the repository that owns the interface you're changing,
      usually Ursa, which holds `lakestream-api`. Link to the thread from the other components.
 2. **Write the LIP.** Copy [TEMPLATE.md](TEMPLATE.md) to `proposals/LIP-NNN-Short-Title.md`. Use the
@@ -90,7 +90,7 @@ says to start.
 ## Commits and pull requests
 
 The rules are the same as in the component repositories. Ursa's
-[contributing guide](https://github.com/lakestream-io/ursa/blob/main/CONTRIBUTING.md#commits) has the
+[contributing guide](https://github.com/openlakestream/ursa/blob/main/CONTRIBUTING.md#commits) has the
 details.
 
 - Sign off every commit with `git commit -s`. The sign-off certifies the
