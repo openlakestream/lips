@@ -1,22 +1,23 @@
 # LIP-163: Ursa Zone-Aware Owner Selection
 
 - *Author(s)*: Kai Wang
-- *Status*: Implemented
+- *Status*: Released
 - *Proposal time*: 2026-03
 - *Scope*: Diskless topics only
 - *Components*: Kafka (UFK)
 - *Discussion*: N/A
+- *Released in*: UFK 4.3.1.1
 
 ## TL;DR
 
-This design adds zone-aware owner selection for diskless topics in this Kafka fork.
+This design adds zone-aware owner selection for diskless topics in UFK.
 Clients can attach `zone_id=<zone>` inside `client.id`, and the broker prefers alive brokers whose `broker.rack` matches that zone. If no matching broker exists, the system falls back to the full alive-broker set. Kafka clients still see a normal leader, but that leader is a zone-aware pseudo leader computed from the request context.
 
 ## Background Knowledge
 
 ### Existing Diskless Path
 
-The Kafka fork already supports diskless topics and routes `Produce`, `Fetch`, `ListOffsets`, and related request paths into Ursa through `DisklessStorageReplicaManagerSupport`.
+UFK already supports diskless topics and routes `Produce`, `Fetch`, `ListOffsets`, and related request paths into Ursa through `DisklessStorageReplicaManagerSupport`.
 
 The existing diskless path already provides:
 
@@ -43,7 +44,7 @@ The target behavior is straightforward:
 3. Owner selection prefers alive brokers in the same zone.
 4. If no in-zone broker is available, the system falls back to all alive brokers.
 
-This document defines that behavior for the Kafka fork.
+This document defines that behavior for UFK.
 
 ### Kafka Broker Topology Metadata
 

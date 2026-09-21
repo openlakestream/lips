@@ -1,10 +1,11 @@
 # LIP-162: Diskless Storage with Ursa Integration
 
 - *Author(s)*: Kai Wang
-- *Status*: Implemented
+- *Status*: Released
 - *Proposal time*: 2026-01
 - *Components*: Kafka (UFK)
 - *Discussion*: N/A
+- *Released in*: UFK 4.3.1.1
 
 ## TL;DR
 
@@ -728,7 +729,7 @@ make destroy
 ```
 
 **Requirements**:
-- Standalone Ursa compactor Maven package (built from the `ursa-storage` repository)
+- Standalone Ursa compactor Maven package (built from the [lakestream-io/ursa](https://github.com/lakestream-io/ursa) repository)
 - MinIO or real S3 for storage backend
 
 ### Lakestream identity compatibility

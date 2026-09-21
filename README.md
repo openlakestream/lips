@@ -32,8 +32,8 @@ To propose a change, read [CONTRIBUTING.md](CONTRIBUTING.md), then start from
 | LIP | Title | Components | Status |
 |---|---|---|---|
 | [161](proposals/LIP-161-Table-Materialization-Framework.md) | Table Materialization Framework | lakestream-api, Ursa | Released in Ursa 1.0.0 |
-| [162](proposals/LIP-162-Diskless-Storage-with-Ursa-Integration.md) | Diskless Storage with Ursa Integration | Kafka (UFK) | Implemented |
-| [163](proposals/LIP-163-Ursa-Zone-Aware-Owner-Selection.md) | Ursa Zone-Aware Owner Selection | Kafka (UFK) | Implemented |
+| [162](proposals/LIP-162-Diskless-Storage-with-Ursa-Integration.md) | Diskless Storage with Ursa Integration | Kafka (UFK) | Released in UFK 4.3.1.1 |
+| [163](proposals/LIP-163-Ursa-Zone-Aware-Owner-Selection.md) | Ursa Zone-Aware Owner Selection | Kafka (UFK) | Released in UFK 4.3.1.1 |
 
 Numbering starts at 161, the number LIP-161 was first published under. LIP-162 and LIP-163 were
 LIP-001 and LIP-002 in lakestream-io/kafka before they moved here.
