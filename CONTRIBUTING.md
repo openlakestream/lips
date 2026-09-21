@@ -57,8 +57,8 @@ says to start.
      new materializer, open a
      [New materializer proposal](https://github.com/lakestream-io/ursa/issues/new?template=materializer_proposal.yml)
      issue instead.
-   - For Ursa for Apache Kafka, open an [issue](https://github.com/lakestream-io/kafka/issues/new) in
-     lakestream-io/kafka.
+   - For Ursa for Apache Kafka, open a thread in Kafka's
+     [Discussions: Ideas](https://github.com/lakestream-io/kafka/discussions/categories/ideas).
    - If the change spans components, start in the repository that owns the interface you're changing,
      usually Ursa, which holds `lakestream-api`. Link to the thread from the other components.
 2. **Write the LIP.** Copy [TEMPLATE.md](TEMPLATE.md) to `proposals/LIP-NNN-Short-Title.md`. Use the
